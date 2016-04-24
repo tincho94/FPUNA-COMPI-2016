@@ -46,7 +46,6 @@ void sigLex()
 	char c=0;
 	int acepto=0;
 	int estado=0;
-	int caracter=0;
 	char msg[41];
 	entrada e;
 
@@ -145,11 +144,6 @@ void sigLex()
 							id[++i]=c;
 							estado=3;
 						}
-						else if (isalpha(c)) {
-							id[++i]=c;
-							estado = 0;
-							caracter =1;
-						}
 						else{
 							estado=6;
 						}
@@ -235,23 +229,14 @@ void sigLex()
 						id[++i]='\0';
 						acepto=1;
 						t.pe=buscar(id);
-						if (caracter == 1){
-							strcpy(e.lexema,id);
-							e.compLex=ERROR;
-							insertar(e);
-							t.pe=buscar(id);
-							t.compLex=ERROR;
-							caracter = 0;
-						}
-						else if (t.pe->compLex==-1)
+						if (t.pe->compLex==-1)
 						{
 							strcpy(e.lexema,id);
 							e.compLex=LITERAL_NUM;
 							insertar(e);
 							t.pe=buscar(id);
-							t.compLex=LITERAL_NUM;
 						}
-						
+						t.compLex=LITERAL_NUM;
 						break;
 					case -1:
 						if (c==EOF)
@@ -344,8 +329,7 @@ int main(int argc,char* args[])
 			"L_LLAVE",
 			"R_LLAVE",
 			"COMA",
-			"DOS_PUNTOS",
-			"ERROR"};
+			"DOS_PUNTOS"};
 	
 	if(argc > 1)
 	{
