@@ -1,0 +1,21 @@
+{"Fruteria:
+ [
+  {"Fruta":
+   [true
+    {"Nombre":"Manz\ana","Cantidad":10},
+    {"Nombre":"Pera","Cantidad":20},
+    {"Nombre":"Naranja","Cantidad":30}#
+   ]true
+  },fa
+  {"Verdura":
+   [false
+    {"Nombre":"Lechuga","Cantidad":80.},null
+    {"Nombre":"Tomate","Cantidad":15},Nul
+    {"Nombre":"Pepino","Cantidad":50}
+   ]
+  }
+ ]
+}asdfa
+tru
+trues
+dffff
