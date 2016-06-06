@@ -1,7 +1,8 @@
 Trabajo Práctico de Compiladores: Analizador Sintáctico en JAVA con Netbeans
+
 Integrantes:
-Leticia Mendieta
-Martín Coronel
+* Leticia Mendieta
+* Martín Coronel
 
 JDK 1.8
 Netbeans 8.1 
