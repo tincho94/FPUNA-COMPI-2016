@@ -620,23 +620,23 @@ void attribute_value(){
 		element();
 	}
 	if(LITERAL_CADENA== t.compLex){
-		fprintf(salida,"%c%s%c", '\"',t.pe->lexema, '\"');
+		fprintf(salida,"%s", t.pe->lexema);
 		match(LITERAL_CADENA);
 	}
 	else if(LITERAL_NUM== t.compLex){
-		fprintf(salida,"%c%s%c", '\"',t.pe->lexema, '\"');
+		fprintf(salida,"%s",t.pe->lexema);
 		match(LITERAL_NUM);
 	}
 	else if(PR_TRUE== t.compLex){
-		fprintf(salida,"%c%s%c", '\"',t.pe->lexema, '\"');
+		fprintf(salida,"%s",t.pe->lexema);
 		match(PR_TRUE);
 	}
 	else if(PR_FALSE== t.compLex){
-		fprintf(salida,"%c%s%c", '\"',t.pe->lexema, '\"');
+		fprintf(salida,"%s",t.pe->lexema);
 		match(PR_FALSE);
 	}
 	else if(PR_NULL== t.compLex){
-		fprintf(salida,"%c%s%c", '\"',t.pe->lexema, '\"');
+		fprintf(salida,"%s",t.pe->lexema);
 		match(PR_NULL);
 	}
 	else {
@@ -645,6 +645,7 @@ void attribute_value(){
 		panicMode(10,t.compLex);
 	}	
 }	
+
 
 
 void element_list(){
