@@ -1,0 +1,20 @@
+<manu>
+	<id>"fila"</id>
+	<value>"File"</value>
+	<popup>
+		<menuitem>
+				<>
+					<value>"New"</value>
+					<onclick>"CreateNewDoc()"</onclick>
+							</>
+				<>
+					<value>"Open"</value>
+					<onclick>"OpenDoc()"</onclick>
+							</>
+				<>
+					<value>"Close"</value>
+					<onclick>"CloseDoc()"</onclick>
+							</>
+		</menuitem>
+	</popup>
+</manu>
